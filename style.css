@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.header-area {
+    padding: 20px 50px;
+}
+
+.info-section {
+    text-align: left;
+    width: 800px;
+    margin: 0 auto;
+}
+
+button {
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(20, 166, 202);
+    color: #fff;
+    padding: 8px 40px;
+    margin: 15px 0;
+}
+
+.canvas-area {
+    width: 100%;
+}
+
+canvas {
+    margin: 0 auto;
+    background-color: rgb(231, 231, 231);
+}
