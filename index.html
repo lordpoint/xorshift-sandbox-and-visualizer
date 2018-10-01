@@ -14,13 +14,13 @@
                 <h1>Xorshift128+ Visualiser</h1>
                 <br>
                 <div class="info-section">
-                    <p>Open this project in your text editor / IDE of choice and try changing 
-                    the <strong>state</strong> and <strong>shift</strong> variables 
-                    (located in scripts.js) to see how they affect the apparent 
+                    <p>Open this project in your text editor / IDE of choice and try changing
+                    the <strong>state</strong> and <strong>shift</strong> variables
+                    (located in scripts.js) to see how they affect the apparent
                     randomness of the outcome. Outcomes are visualized below.
                     </p>
                     <br>
-                    <p>This program runs the xorshift algorithm once for 
+                    <p>This program runs the xorshift algorithm once for
                     each pixel in the frame below. The pixel is colored black if xorshift
                     returns an even number and white if it returns an odd number; outcomes which should
                     be equally likely in a perfectly randomized scenario with no repetitions.
@@ -32,16 +32,20 @@
                     the <strong>visualize</strong> button below to see what it looks like.
                     </p>
                 </div>
+                State 0
+                <input type="number" value="1" id="state0" onChange="setState()" />
+                State 1
+                <input type="number" value="2" id="state1" onChange="setState()" />
                 <button onclick="draw()">Visualize</button>
             </div>
-            
+
             <div class="canvas-area">
                 <canvas id="canvas"></canvas>
             </div>
-            
+
 
     </div>
-    
+
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script> -->
     <script src="scripts.js"></script>
